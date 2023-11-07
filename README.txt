@@ -1,4 +1,4 @@
-My application is called "Acme SCheduling," and its purpose is to allow a company to manage customers and appointments belonging to those customers. Users can add and update both customer information and appointment information. Information is stored in a SQL database. 
+My application is called "Acme SCheduling," and its purpose is to allow a company to manage customers and appointments belonging to those customers. Users can add and update both customer information and appointment information. Information is stored in a SQL database, provided as part of the class.
 
 Additionally, users can run reports detailing various types of information related to the saved appointments.  
 
@@ -17,6 +17,4 @@ Two lamdas have been added to the code:
 
 1. App/Controller/HomeController.java - line 360 in monthApptRadio()
 2. App/Controller/ReportController.java - line 108 in contactRun()
-
-
 
