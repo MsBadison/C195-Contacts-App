@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller.HomeController">
+    <TableView fx:id="custTable" layoutX="50.0" layoutY="37.0" prefHeight="200.0" prefWidth="700.0">
+      <columns>
+          <TableColumn fx:id="home_custIDCol" prefWidth="50.0" text="ID" />
+          <TableColumn fx:id="home_custNameCol" prefWidth="150.0" text="Name" />
+          <TableColumn fx:id="home_custAddCol" prefWidth="150.0" text="Address" />
+          <TableColumn fx:id="home_custZipCol" prefWidth="50.0" text="Zipcode" />
+          <TableColumn fx:id="home_custStateCol" prefWidth="75.0" text="State" />
+          <TableColumn fx:id="home_custCountryCol" prefWidth="75.0" text="Country" />
+          <TableColumn fx:id="home_custPhoneCol" prefWidth="150.0" text="Phone number" />
+      </columns>
+    </TableView>
+    <TableView fx:id="apptTable" layoutX="50.0" layoutY="307.0" prefHeight="200.0" prefWidth="700.0">
+      <columns>
+          <TableColumn fx:id="home_apptIDCol" prefWidth="50.0" text="ID" />
+          <TableColumn fx:id="home_apptTitleCol" prefWidth="100.0" text="Title" />
+          <TableColumn fx:id="home_apptDescCol" prefWidth="100.0" text="Description" />
+          <TableColumn fx:id="home_apptLocCol" prefWidth="100.0" text="Location" />
+          <TableColumn fx:id="home_apptContCol" prefWidth="100.0" text="Contact" />
+          <TableColumn fx:id="home_apptTypeCol" prefWidth="100.0" text="Type" />
+          <TableColumn fx:id="home_apptStartCol" prefWidth="100.0" text="Start" />
+          <TableColumn fx:id="home_apptEndCol" prefWidth="100.0" text="End" />
+          <TableColumn fx:id="home_apptCustIDCol" prefWidth="100.0" text="Customer ID" />
+          <TableColumn fx:id="home_apptUserIDCol" prefWidth="100.0" text="User ID" />
+      </columns>
+    </TableView>
+   <Button fx:id="home_updateCustButton" layoutX="698.0" layoutY="245.0" mnemonicParsing="false" onAction="#mainCustUpdate" text="Update" />
+   <Button fx:id="home_addCustButton" layoutX="649.0" layoutY="245.0" mnemonicParsing="false" onAction="#mainCustAdd" text="Add" />
+   <Button fx:id="home_delCustButton" layoutX="50.0" layoutY="245.0" mnemonicParsing="false" onAction="#mainCustDel" text="Delete" />
+   <Button fx:id="home_updateApptButton" layoutX="698.0" layoutY="515.0" mnemonicParsing="false" onAction="#mainApptUpdate" text="Update" />
+   <Button fx:id="home_addApptButton" layoutX="649.0" layoutY="515.0" mnemonicParsing="false" onAction="#mainApptAdd" text="Add" />
+   <Button fx:id="home_delApptButton" layoutX="50.0" layoutY="515.0" mnemonicParsing="false" onAction="#mainApptDel" text="Delete" />
+   <Text layoutX="50.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Text>
+   <Text layoutX="50.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Text>
+   <Button fx:id="home_quitButton" layoutX="50.0" layoutY="561.0" mnemonicParsing="false" onAction="#homeQuit" text="Quit" />
+   <Button fx:id="home_logoutButton" layoutX="101.0" layoutY="561.0" mnemonicParsing="false" onAction="#homeLogout" text="Logout" />
+   <Button fx:id="home_reportsButton" layoutX="697.0" layoutY="561.0" mnemonicParsing="false" onAction="#homeReports" text="Reports" />
+   <RadioButton fx:id="home_allApptRadio" layoutX="170.0" layoutY="281.0" mnemonicParsing="false" onAction="#allApptRadio" selected="true" text="All">
+      <toggleGroup>
+         <ToggleGroup fx:id="apptFilterGroup" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="home_weekApptRadio" layoutX="226.0" layoutY="281.0" mnemonicParsing="false" onAction="#weekApptRadio" text="This week" toggleGroup="$apptFilterGroup" />
+   <RadioButton fx:id="home_monthApptRadio" layoutX="318.0" layoutY="281.0" mnemonicParsing="false" onAction="#monthApptRadio" text="This month" toggleGroup="$apptFilterGroup" />
+</AnchorPane>

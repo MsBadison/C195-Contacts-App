@@ -1,0 +1,4 @@
+User 'test' successfully logged on @ 2023-10-06T22:40:35.370256100Z UTC
+User 'admin' successfully logged on @ 2023-10-07T01:04:45.573078300Z UTC
+User 'admin' successfully logged off @ 2023-10-07T01:05:05.905070500Z UTC
+User 'test' successfully logged on @ 2023-10-07T01:34:42.257720900Z UTC
