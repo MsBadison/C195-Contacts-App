@@ -2,11 +2,6 @@ My application is called "Acme SCheduling," and its purpose is to allow a compan
 
 Additionally, users can run reports detailing various types of information related to the saved appointments.  
 
-Author: Madison Maguire
-Contact: mmagu16@wgu.edu
-Application version: 1.00
-Date: 10/06/23
-
 IDE: IntelliJ IDEA 2021.1.3 (Community Edition)
 JDK version: Java SE 17.0.1
 JavaFX version: JavaFX-SDK-17.0.1
